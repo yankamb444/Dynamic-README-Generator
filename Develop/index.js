@@ -79,7 +79,7 @@ console.log(answers.license)
   console.log(answers.title)
 
     // TODO: Create a function to write README file
-    // function writeToFile(README, data) {}
+
 
     fs.writeFile("README.MD", readmeTemplate, (err) => {
         if (err) {
