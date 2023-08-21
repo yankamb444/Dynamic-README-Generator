@@ -38,9 +38,21 @@ const mainFunction = async function () {
             },
 
             {
+                name: "userName",
+                message: "What is your GitHub username?",
+                type: "input",
+            },
+
+            {
+                name: "resources",
+                message: "Please enter any resources you used for this project.",
+                type: "input",
+            },
+
+            {
                 name: "license",
                 message: "Please select a license",
-                choices: ["MIT", "Eclipse", "GNU", "Mozilla", "None"],
+                choices: ["MIT", "Eclipse", "GNU", "Mozilla", "Apache", "Boost", "None"],
                 type: "list"
             },
 
@@ -52,30 +64,43 @@ const mainFunction = async function () {
                 Eclipse: '[![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0)',
                 GNU: '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)',
                 Mozilla: '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)',
+                Apache: '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)',
+                Boost: '[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)',
                 None: '',
-              };
+            };
 
-              badges = licenseBadge
-         
+            badges = licenseBadge
+
         });
-console.log(badges["Eclipse"])
-console.log(answers.license)
+    console.log(badges["Eclipse"])
+    console.log(answers.license)
 
     const readmeTemplate =
-        `${answers.title}
+
+        `
+  # Title
+  ${answers.title}
+
   # Description
   ${answers.motivation}
   ${answers.build}
   ${answers.problem}
+  ${answers.userName}
+
   # Installation
   ${answers.install}
+
   # Usage
+
   #Credits
+  ${answers.resources}
   # License
+  ${answers.license}
+
   # Badges
   ${badges[answers.license]}`
 
-  console.log(answers.title)
+    console.log(answers.title)
 
     // TODO: Create a function to write README file
 

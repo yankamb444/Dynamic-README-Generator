@@ -1,12 +1,22 @@
-hi
+
+  # Title
+  1
+
   # Description
-  d
-  a
-  x
+  1
+  1
+  1
+  1
+
   # Installation
-  j
+  1
+
   # Usage
+
   #Credits
+  1
   # License
+  None
+
   # Badges
-  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+  
