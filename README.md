@@ -27,4 +27,8 @@ The goal of the challenge is to create a read me that will create itself based o
 # Resources Used
 This challenge was created with the help of a tutor, starter code, and the resource(s) below.  
 
- 1. 
+ 1. Professional README Guide: https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide/
+ 2. License Badges: https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba 
+
+# License 
+Please refer to the license in the repo.
