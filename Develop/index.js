@@ -4,7 +4,6 @@ const fs = require('fs-extra');
 const generateMarkdown = require("./Utils/generateMarkdown")
 
 // TODO: Create an array of questions for user input
-// const questions = [];
 
 const mainFunction = async function () {
     let answers;
